@@ -27,13 +27,14 @@ public class URLReplacement {
                 else if (line.startsWith("hxxps[:]//")) {
                     line = line.substring(10); 
                 }
-                line = line.replace("[.]", ".");
-              
+                             
                 int slashIndex = line.indexOf('/'); 
                 if (slashIndex != -1) { 
                     line = line.substring(0, slashIndex); 
                 }
-             
+
+                 line = line.replace("[.]", ".");
+                
                 writer.write(line);
                 writer.newLine(); 
             }
