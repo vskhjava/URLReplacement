@@ -42,7 +42,7 @@ public class URLReplacement {
             System.out.println("Обработка файла завершена. Результат сохранён в файл " + outputFile);
 
         } catch (FileNotFoundException e) {
-            // Ошибка: файл 1.txt не найден
+            // Ошибка: файл inputFile.txt не найден
             System.err.println("Ошибка: файл " + inputFile + " не найден!");
             System.err.println("Подробности: " + e.getMessage());
         } catch (IOException e) {
